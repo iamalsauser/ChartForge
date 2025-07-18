@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FBE3A0892E2A798A00BF94CC /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBE3A0882E2A798A00BF94CC /* WidgetKit.framework */; };
+		FBE3A08B2E2A798A00BF94CC /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBE3A08A2E2A798A00BF94CC /* SwiftUI.framework */; };
+		FBE3A09C2E2A798F00BF94CC /* ChartForgeWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FBE3A0862E2A798A00BF94CC /* ChartForgeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		FBE3A0422E2A48EA00BF94CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +27,48 @@
 			remoteGlobalIDString = FBE3A0322E2A48E500BF94CC;
 			remoteInfo = ChartForge;
 		};
+		FBE3A09A2E2A798F00BF94CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBE3A02B2E2A48E500BF94CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBE3A0852E2A798A00BF94CC;
+			remoteInfo = ChartForgeWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FBE3A0A12E2A798F00BF94CC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FBE3A09C2E2A798F00BF94CC /* ChartForgeWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FBE3A0332E2A48E500BF94CC /* ChartForge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartForge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBE3A0412E2A48EA00BF94CC /* ChartForgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChartForgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBE3A04B2E2A48EA00BF94CC /* ChartForgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChartForgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBE3A0862E2A798A00BF94CC /* ChartForgeWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ChartForgeWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBE3A0882E2A798A00BF94CC /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		FBE3A08A2E2A798A00BF94CC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		FBE3A0A22E2A7DE600BF94CC /* ChartForgeWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChartForgeWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FBE3A09D2E2A798F00BF94CC /* Exceptions for "ChartForgeWidget" folder in "ChartForgeWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FBE3A0852E2A798A00BF94CC /* ChartForgeWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FBE3A0352E2A48E500BF94CC /* ChartForge */ = {
@@ -43,6 +84,14 @@
 		FBE3A04E2E2A48EA00BF94CC /* ChartForgeUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ChartForgeUITests;
+			sourceTree = "<group>";
+		};
+		FBE3A08C2E2A798A00BF94CC /* ChartForgeWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FBE3A09D2E2A798F00BF94CC /* Exceptions for "ChartForgeWidget" folder in "ChartForgeWidgetExtension" target */,
+			);
+			path = ChartForgeWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,15 +118,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FBE3A0832E2A798A00BF94CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE3A08B2E2A798A00BF94CC /* SwiftUI.framework in Frameworks */,
+				FBE3A0892E2A798A00BF94CC /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		FBE3A02A2E2A48E500BF94CC = {
 			isa = PBXGroup;
 			children = (
+				FBE3A0A22E2A7DE600BF94CC /* ChartForgeWidgetExtension.entitlements */,
 				FBE3A0352E2A48E500BF94CC /* ChartForge */,
 				FBE3A0442E2A48EA00BF94CC /* ChartForgeTests */,
 				FBE3A04E2E2A48EA00BF94CC /* ChartForgeUITests */,
+				FBE3A08C2E2A798A00BF94CC /* ChartForgeWidget */,
+				FBE3A0872E2A798A00BF94CC /* Frameworks */,
 				FBE3A0342E2A48E500BF94CC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +149,18 @@
 				FBE3A0332E2A48E500BF94CC /* ChartForge.app */,
 				FBE3A0412E2A48EA00BF94CC /* ChartForgeTests.xctest */,
 				FBE3A04B2E2A48EA00BF94CC /* ChartForgeUITests.xctest */,
+				FBE3A0862E2A798A00BF94CC /* ChartForgeWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FBE3A0872E2A798A00BF94CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBE3A0882E2A798A00BF94CC /* WidgetKit.framework */,
+				FBE3A08A2E2A798A00BF94CC /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +173,12 @@
 				FBE3A02F2E2A48E500BF94CC /* Sources */,
 				FBE3A0302E2A48E500BF94CC /* Frameworks */,
 				FBE3A0312E2A48E500BF94CC /* Resources */,
+				FBE3A0A12E2A798F00BF94CC /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FBE3A09B2E2A798F00BF94CC /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				FBE3A0352E2A48E500BF94CC /* ChartForge */,
@@ -163,6 +236,28 @@
 			productReference = FBE3A04B2E2A48EA00BF94CC /* ChartForgeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		FBE3A0852E2A798A00BF94CC /* ChartForgeWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBE3A09E2E2A798F00BF94CC /* Build configuration list for PBXNativeTarget "ChartForgeWidgetExtension" */;
+			buildPhases = (
+				FBE3A0822E2A798A00BF94CC /* Sources */,
+				FBE3A0832E2A798A00BF94CC /* Frameworks */,
+				FBE3A0842E2A798A00BF94CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FBE3A08C2E2A798A00BF94CC /* ChartForgeWidget */,
+			);
+			name = ChartForgeWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = ChartForgeWidgetExtension;
+			productReference = FBE3A0862E2A798A00BF94CC /* ChartForgeWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +279,9 @@
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = FBE3A0322E2A48E500BF94CC;
 					};
+					FBE3A0852E2A798A00BF94CC = {
+						CreatedOnToolsVersion = 16.4;
+					};
 				};
 			};
 			buildConfigurationList = FBE3A02E2E2A48E500BF94CC /* Build configuration list for PBXProject "ChartForge" */;
@@ -203,6 +301,7 @@
 				FBE3A0322E2A48E500BF94CC /* ChartForge */,
 				FBE3A0402E2A48EA00BF94CC /* ChartForgeTests */,
 				FBE3A04A2E2A48EA00BF94CC /* ChartForgeUITests */,
+				FBE3A0852E2A798A00BF94CC /* ChartForgeWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +322,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		FBE3A0492E2A48EA00BF94CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBE3A0842E2A798A00BF94CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +359,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FBE3A0822E2A798A00BF94CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +378,11 @@
 			isa = PBXTargetDependency;
 			target = FBE3A0322E2A48E500BF94CC /* ChartForge */;
 			targetProxy = FBE3A04C2E2A48EA00BF94CC /* PBXContainerItemProxy */;
+		};
+		FBE3A09B2E2A798F00BF94CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBE3A0852E2A798A00BF94CC /* ChartForgeWidgetExtension */;
+			targetProxy = FBE3A09A2E2A798F00BF94CC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -553,6 +671,67 @@
 			};
 			name = Release;
 		};
+		FBE3A09F2E2A798F00BF94CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = ChartForgeWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5BR8H6ZB3A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChartForgeWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ChartForgeWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = parth.ChartForge.ChartForgeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBE3A0A02E2A798F00BF94CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = ChartForgeWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5BR8H6ZB3A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChartForgeWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ChartForgeWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = parth.ChartForge.ChartForgeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -588,6 +767,15 @@
 			buildConfigurations = (
 				FBE3A05C2E2A48EA00BF94CC /* Debug */,
 				FBE3A05D2E2A48EA00BF94CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBE3A09E2E2A798F00BF94CC /* Build configuration list for PBXNativeTarget "ChartForgeWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBE3A09F2E2A798F00BF94CC /* Debug */,
+				FBE3A0A02E2A798F00BF94CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
