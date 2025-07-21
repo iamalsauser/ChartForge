@@ -1,0 +1,5 @@
+![analytic (1)](https://github.com/user-attachments/assets/3ffea8a8-92e8-4827-add3-8535c59899a6)
+![buy_sell_form (1)](https://github.com/user-attachments/assets/a6cbcfa4-db94-4dac-9892-27e6bec9d5a0)
+![crypto_assets (1)](https://github.com/user-attachments/assets/55417180-c78b-42f2-9884-d4e3004ce914)
+![data (1)](https://github.com/user-attachments/assets/3d798340-9aaf-4245-a3c3-4a75ca8dc9e5)
+![Widget (1)](https://github.com/user-attachments/assets/ac760877-042e-4f49-b1cf-f6321aa465bb)
