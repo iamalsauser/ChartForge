@@ -43,7 +43,7 @@ Mock trading interface for testing buy/sell logic with live price data.
 Live feed of trending assets with key stats.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/55417180-c78b-42f2-9884-d4e3004ce914" alt="Crypto Assets List" width="600"/>
+  <img src="https://github.com/user-attachments/assets/55417180-c78b-42f2-9884-d4e3004ce914" alt="Crypto Assets List" width="400"/>
 </p>
 
 ---
