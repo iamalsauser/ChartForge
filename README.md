@@ -22,8 +22,9 @@ An iOS-based **personalized crypto platform** to simulate trading, analyze live 
 Comprehensive layout showing live analytics and top coins at a glance.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/3ffea8a8-92e8-4827-add3-8535c59899a6" alt="Analytics Overview" width="600"/>
+  <img src="https://github.com/user-attachments/assets/3ffea8a8-92e8-4827-add3-8535c59899a6" alt="Analytics Overview" width="400"/>
 </p>
+
 
 ---
 
